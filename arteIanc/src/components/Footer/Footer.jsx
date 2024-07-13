@@ -1,9 +1,17 @@
 
-
+import './Footer.css'
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <footer>
+            <span className='spanFooter'>
+                Bianca Santos
+            </span>
+            &copy;
+            <p>
+                Arte Ianc
+            </p>
+        </footer>
     )
 }
 

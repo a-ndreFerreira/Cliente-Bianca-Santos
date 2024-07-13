@@ -1,0 +1,55 @@
+.arteiancdiv {
+    position: relative;
+    min-width: 220px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.arte-div {
+    position: absolute;
+    font-size: 1.2em;
+    top: 0;
+    left: 6px;
+    letter-spacing: 2px;
+}
+
+.ianc-div {
+    font-size: 5em;
+}
+
+.ianc-div span {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-width: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container img {
+    margin: 50px;
+    max-width: 350px;
+}
+
+.container .divEyeIanc {
+    background: radial-gradient(#c4c4c4,
+            #c2c2c2 0%,
+            #222 30%,
+            #111 70%);
+}

@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.divTitle {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.divTitle h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3rem;
+}
+
+.divTitle p {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .8rem;
+}
+
+.navItems,
+.navSocialItems {
+    display: flex;
+    list-style: none;
+}
+
+.navSocialItems li a {
+    font-size: 1.4rem;
+    padding: .5rem;
+    margin: .1rem;
+    color: #c4c4c4;
+}
+
+.navItems {
+    display: flex;
+    padding: .5rem;
+}
+
+.navItems li a {
+    color: #c4c4c4;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
