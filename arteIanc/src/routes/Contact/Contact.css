@@ -1,0 +1,33 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.formContainer label {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer span {
+    margin-bottom: .8rem;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.formContainer input {
+    height: 30px;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.formContainer textarea {
+    height: 200px;
+    width: 400px;
+    border-radius: 4px;
+}

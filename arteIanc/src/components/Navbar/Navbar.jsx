@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import './Navbar.css'
 
@@ -12,15 +12,16 @@ const Navbar = () => {
 
     const navItems = [
         { link: 'Home', path: '/' },
-        { link: 'Contato', path: '/contact' },
-        { link: 'Trabalhos', path: '/works' }
+        { link: 'Trabalhos', path: '/works' },
+        { link: 'Sobre', path: '/about' },
+        { link: 'Contato', path: '/contact' }
     ];
 
     const navSocialItems = [
-        { link: <FaFacebookF />, path: '#1' },
-        { link: <FaInstagram />, path: '#2' },
-        { link: <FaBehance />, path: '#3' },
-        { link: <FaLinkedinIn />, path: '#4' }
+        { link: <FaFacebookF />, href: 'https://www.facebook.com' },
+        { link: <FaInstagram />, href: 'https://www.instagram.com' },
+        { link: <FaBehance />, href: 'https://www.behance.net' },
+        { link: <FaLinkedinIn />, href: 'https://www.linkedin.com' }
     ];
 
     return (
@@ -37,10 +38,10 @@ const Navbar = () => {
                 <ul className='navSocialItems'>
                     {
                         navSocialItems.map((socialItem) => (
-                            <li key={socialItem.path}>
-                                <Link to={socialItem.path} >
+                            <li key={socialItem.href}>
+                                <a href={socialItem.href} target="_blank" >
                                     {socialItem.link}
-                                </Link>
+                                </a>
                             </li>
                         ))
                     }

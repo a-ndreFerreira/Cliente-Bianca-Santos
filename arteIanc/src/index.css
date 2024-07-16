@@ -13,3 +13,14 @@ body {
     background-color: #111;
     color: #fff;
 }
+
+input::placeholder,
+textarea::placeholder {
+    font-family: Helvetica, sans-serif;
+    color: #aaa;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
