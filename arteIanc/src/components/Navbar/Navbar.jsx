@@ -12,7 +12,7 @@ const Navbar = () => {
 
     const navItems = [
         { link: 'Home', path: '/' },
-        { link: 'Trabalhos', path: '/works' },
+        { link: 'Projetos', path: '/projects' },
         { link: 'Sobre', path: '/about' },
         { link: 'Contato', path: '/contact' }
     ];
@@ -28,7 +28,7 @@ const Navbar = () => {
         <header className='header'>
             <div className='divTitle'>
                 <h1>
-                    Bianca Santos
+                    Arte Ianc
                 </h1>
                 <p>
                     Ilustradora | Designer | Produtora Cultural
