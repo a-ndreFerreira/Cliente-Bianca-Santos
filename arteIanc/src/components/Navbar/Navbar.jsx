@@ -26,26 +26,15 @@ const Navbar = () => {
 
     return (
         <header className='header'>
-            <div className='divTitle'>
-                <h1>
-                    Arte Ianc
-                </h1>
-                <p>
-                    Ilustradora | Designer | Produtora Cultural
-                </p>
-            </div>
             <nav className='navbar'>
-                <ul className='navSocialItems'>
-                    {
-                        navSocialItems.map((socialItem) => (
-                            <li key={socialItem.href}>
-                                <a href={socialItem.href} target="_blank" >
-                                    {socialItem.link}
-                                </a>
-                            </li>
-                        ))
-                    }
-                </ul>
+                <div className='divTitle'>
+                    <h1>
+                        Arte Ianc
+                    </h1>
+                    <p>
+                        Ilustradora | Designer | Produtora Cultural
+                    </p>
+                </div>
                 <ul className='navItems'>
                     {
                         navItems.map((navItem) => (
@@ -59,6 +48,19 @@ const Navbar = () => {
                         ))
                     }
                 </ul>
+
+                <ul className='navSocialItems'>
+                    {
+                        navSocialItems.map((socialItem) => (
+                            <li key={socialItem.href}>
+                                <a href={socialItem.href} target="_blank" >
+                                    {socialItem.link}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+
             </nav>
         </header>
     )
