@@ -10,6 +10,7 @@ footer {
             #000000 0%,
             #020617 60%,
             #0f172a 100%);
+    text-transform: uppercase;
 }
 
 .spanFooter {

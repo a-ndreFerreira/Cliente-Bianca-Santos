@@ -1,7 +1,6 @@
 
 import { FaBehance } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
 import { NavLink } from "react-router-dom";
@@ -18,7 +17,6 @@ const Navbar = () => {
     ];
 
     const navSocialItems = [
-        { link: <FaFacebookF />, href: 'https://www.facebook.com' },
         { link: <FaInstagram />, href: 'https://www.instagram.com' },
         { link: <FaBehance />, href: 'https://www.behance.net' },
         { link: <FaLinkedinIn />, href: 'https://www.linkedin.com' }
@@ -29,10 +27,10 @@ const Navbar = () => {
             <nav className='navbar'>
                 <div className='divTitle'>
                     <h1>
-                        Arte Ianc
+                        <a href='/'>Arte Ianc</a>
                     </h1>
                     <p>
-                        Ilustradora | Designer | Produtora Cultural
+                        Artista Visual | Produtora Cultural
                     </p>
                 </div>
                 <ul className='navItems'>
