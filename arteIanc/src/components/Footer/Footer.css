@@ -8,8 +8,8 @@ footer {
     gap: .6rem;
     background: linear-gradient(180deg,
             #000000 0%,
-            #020617 60%,
-            #0f172a 100%);
+            #09090b 60%,
+            #18181b 100%);
     text-transform: uppercase;
 }
 
