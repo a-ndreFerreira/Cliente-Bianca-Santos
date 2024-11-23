@@ -47,6 +47,7 @@ function App() {
         <div id='containerOutlet'>
           <Outlet />
         </div>
+
       </div>
       <Footer />
     </div>

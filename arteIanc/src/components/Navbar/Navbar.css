@@ -12,7 +12,8 @@
 
 .divTitle {
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0 15px 0;
+    padding: 5px;
 }
 
 .divTitle h1 {
@@ -34,6 +35,11 @@
     text-transform: uppercase;
 }
 
+#navFlex {
+    display: flex;
+    align-items: center;
+}
+
 .navbar {
     display: flex;
     width: 100%;
@@ -42,22 +48,32 @@
     padding: .5rem .2rem;
 }
 
-.navItems,
+
 .navSocialItems {
     display: flex;
+    padding: .5rem;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
     list-style: none;
 }
 
 .navSocialItems li a {
-    font-size: 1.2rem;
-    padding: .3rem;
-    margin: .1rem;
+    font-size: 1rem;
+    padding: .5rem;
+    margin: .2rem;
+    color: #fff;
+}
+
+.navSocialItems li a:hover {
     color: #c4c4c4;
+    transition: all .3s;
 }
 
 .navItems {
     display: flex;
     padding: .5rem;
+    list-style: none;
 }
 
 .navItems li a {
@@ -68,6 +84,15 @@
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.navSocialItems li a svg {
+    font-size: 1.2rem;
+}
+
+.navItems li a:hover {
+    color: #fff;
+    transition: all .3s;
 }
 
 .active {

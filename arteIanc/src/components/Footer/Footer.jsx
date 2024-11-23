@@ -4,13 +4,13 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer>
-            <span className='spanFooter'>
-                Bianca Santos
-            </span>
-            &copy;
             <p>
                 Arte Ianc
             </p>
+            &copy;
+            <span className='spanFooter'>
+                Bianca Santos
+            </span>
         </footer>
     )
 }

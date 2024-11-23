@@ -33,31 +33,34 @@ const Navbar = () => {
                         Artista Visual | Produtora Cultural
                     </p>
                 </div>
-                <ul className='navItems'>
-                    {
-                        navItems.map((navItem) => (
-                            <li key={navItem.path}>
-                                <NavLink to={navItem.path}
-                                    className={({ isActive }) => (isActive ? 'active' : '')}
-                                >
-                                    {navItem.link}
-                                </NavLink>
-                            </li>
-                        ))
-                    }
-                </ul>
 
-                <ul className='navSocialItems'>
-                    {
-                        navSocialItems.map((socialItem) => (
-                            <li key={socialItem.href}>
-                                <a href={socialItem.href} target="_blank" >
-                                    {socialItem.link}
-                                </a>
-                            </li>
-                        ))
-                    }
-                </ul>
+                <div id='navFlex'>
+                    <ul className='navItems'>
+                        {
+                            navItems.map((navItem) => (
+                                <li key={navItem.path}>
+                                    <NavLink to={navItem.path}
+                                        className={({ isActive }) => (isActive ? 'active' : '')}
+                                    >
+                                        {navItem.link}
+                                    </NavLink>
+                                </li>
+                            ))
+                        }
+                    </ul>
+
+                    <ul className='navSocialItems'>
+                        {
+                            navSocialItems.map((socialItem) => (
+                                <li key={socialItem.href}>
+                                    <a href={socialItem.href} target="_blank" >
+                                        {socialItem.link}
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
 
             </nav>
         </header>
